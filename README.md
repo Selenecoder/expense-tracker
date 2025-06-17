@@ -1,4 +1,4 @@
-# 🪙 **VYAYSIGH** – SMART EXPENSE TRACKER APP
+# 💸 **VYAYSIGH** – SMART EXPENSE TRACKER APP
                    “Track every rupee like it matters — because it does.” – VYAYSIGH
 > Take control of your finances with **VYAYSIGH** – a clean, powerful, and intelligent expense management solution for modern users.
 
