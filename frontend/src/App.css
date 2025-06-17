@@ -1,0 +1,265 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: left;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+.card-title {
+  color: #0d6efd;
+  font-weight: bold;
+}
+.sidebar-scroll {
+  height: 100vh;
+  overflow-y: auto;
+  position: sticky;
+  top: 0;
+}
+/* Styles for the Calendar Component */
+.calendar {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 320px;
+  margin: auto;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: white;
+}
+
+.calendar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.calendar-nav {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.calendar-weekdays {
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.calendar-weekday {
+  width: 30px;
+  text-align: center;
+}
+
+.calendar-days {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 5px;
+  margin-top: 10px;
+}
+
+.calendar-day {
+  padding: 10px;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.calendar-day:hover {
+  background-color: #f0f0f0;
+}
+
+.calendar-day.empty {
+  background-color: transparent;
+}
+
+.calendar-month-year {
+  font-size: 1.1rem;
+}
+.timeline {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.timeline li::before {
+  content: "•";
+  color: #0d6efd;
+  font-weight: bold;
+  margin-right: 8px;
+}
+.flip-card {
+  background-color: transparent;
+  width: 100%;
+  height: 200px;
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: left;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  color: white;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  z-index: 2;
+}
+
+.flip-card-back {
+  transform: rotateY(180deg);
+}
+
+/* Color Themes */
+.card-bg-visa {
+  background: linear-gradient(135deg, #1a2980, #26d0ce);
+}
+
+.card-bg-mastercard {
+  background: linear-gradient(135deg, #f46b45, #eea849);
+}
+
+.card-bg-rupay {
+  background: linear-gradient(135deg, #283e51, #485563);
+}
+
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+.container-fluid {
+  display: flex;
+  padding: 0;
+  height: 100%;
+}
+
+.d-flex {
+  display: flex;
+  flex-direction: row;
+}
+
+.bg-light {
+  background-color: #f8f9fa;
+}
+
+.min-vh-100 {
+  min-height: 100vh; /* Make sidebar stretch full height */
+}
+
+.p-4 {
+  padding: 1.5rem;
+}
+
+.card {
+  border-radius: 12px;
+}
+
+.card-title {
+  font-size: 1.1rem;
+  color: white;
+}
+
+.card-text {
+  font-size: 1.2rem;
+  color: white;
+}
+
+table {
+  font-size: 0.9rem;
+}
+
+.app-container {
+  min-height: 100vh;
+}
+
+.dashboard-layout {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.content-wrapper {
+  display: flex;
+  flex: 1;
+  margin-top: 56px; /* Height of navbar */
+}
+
+.main-content {
+  flex: 1;
+  padding: 2rem;
+  background-color: #f8f9fa;
+  overflow-y: auto;
+}
+
+@media (max-width: 992px) {
+  .container-fluid {
+    flex-direction: column;
+  }
+
+  .col-md-2 {
+    width: 100%;
+  }
+
+  .col-md-10 {
+    width: 100%;
+  }
+}
+

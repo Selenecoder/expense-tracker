@@ -1,0 +1,14 @@
+ Dashboard Features
+Summary Cards (e.g. Total Income, Total Expense, Balance)
+
+Recent Transactions Table
+
+Add Transaction Button
+
+Filters (Date, Category)
+
+Navigation Sidebar or Topbar
+
+
+Help write the Spring Boot controller to validate the Google token and issue your own JWT?
+

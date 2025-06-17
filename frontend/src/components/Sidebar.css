@@ -1,0 +1,51 @@
+.sidebar-container {
+    width: 250px;
+    min-height: 100%;
+    background-color: #343a40;
+    color: white;
+    position: sticky;
+    top: 56px; /* Match navbar height */
+    height: calc(100vh - 56px);
+  }
+  
+  .profile-box {
+    padding-top: 20px;
+  }
+  
+  .nav-link {
+    color: rgba(255, 255, 255, 0.8) !important;
+    padding: 0.8rem 1rem;
+    transition: all 0.3s ease;
+  }
+  
+  .nav-link:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white !important;
+  }
+  
+  .icon-box {
+    background-color: #0d6efd;
+    border-radius: 70%;
+    width: 24px;
+    height: 60px;
+    display: inline-flex;
+    justify-content: center;
+    margin-right: 10px;
+    transition: all 0.3s ease;
+  }
+  
+  .icon-box svg {
+    color: white;
+    font-size: 20px;
+  }
+  
+  .nav-link:hover .icon-box {
+    background-color: #0b5ed7;
+    transform: scale(1.1);
+  }
+  
+  .active {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white !important;
+    border-left: 4px solid #007bff;
+  }
